@@ -1,0 +1,17 @@
+import { ConfiguracionComederos, ICliente, IDispositivo } from "../../admin";
+import { IEstablecimiento } from "../establecimiento";
+
+export interface IComedero {
+  _id?: string;
+  // Tentant
+  idCliente?: string;
+  idEstablecimiento?: string;
+  configuraciones?: ConfiguracionComederos;
+  //
+  nombre: string;
+  idDispositivos: string[];
+  // Virtuals
+  dispositivos?: IDispositivo[];
+  cliente?: ICliente;
+  establecimiento?: IEstablecimiento;
+}
