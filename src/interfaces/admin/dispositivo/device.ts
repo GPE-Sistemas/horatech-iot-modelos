@@ -9,11 +9,11 @@ export interface IDevice {
   deviceName: string;
   appkey: string;
   conectividad: TipoConectividad;
+  tipo?: TipoDispositivo;
   idTipoDispositivo: string;
   idLoteDispositivo?: string;
   idLoraServer?: string;
   deviceProfileID?: string;
-  tipo?: TipoDispositivo;
   // Virtuals
   tipoDispositivo?: ITipoDispositivo;
   loteDispositivo?: ILoteDispositivo;

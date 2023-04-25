@@ -6,8 +6,9 @@ export interface IDatosPersonales {
 
 export interface IUsuario {
   _id: string;
-  activo: boolean;
   fechaCreacion: string;
+  //
+  activo: boolean;
   username: string;
   hash?: string;
   datosPersonales?: IDatosPersonales;

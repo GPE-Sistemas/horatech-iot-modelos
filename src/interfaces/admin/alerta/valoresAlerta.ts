@@ -1,5 +1,13 @@
+export type TipoAlerta =
+  | "Seguridad"
+  | "Operacional"
+  | "Calidad"
+  | "Técnica"
+  | "Otros";
+export type NivelAlerta = "Alto" | "Medio" | "Bajo";
+
 export interface IValoresAlerta {
-  tipo?: string;
-  nivel?: string;
+  tipo?: TipoAlerta;
+  nivel?: NivelAlerta;
   descripcion?: string;
 }

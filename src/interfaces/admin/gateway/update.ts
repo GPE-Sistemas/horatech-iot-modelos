@@ -1,6 +1,6 @@
-import { ICoordenadas } from "../../auxiliares/coordenadas";
+import { ILocation } from "../../auxiliares";
 
 export interface IUpdateGateway {
   gatewayEui?: string;
-  ubicacion?: ICoordenadas;
+  location?: ILocation;
 }

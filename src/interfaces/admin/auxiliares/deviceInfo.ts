@@ -1,7 +1,7 @@
 import { TipoDispositivo } from "./tipoDispositivo";
 
 export interface IDeviceInfo {
-  deviceName?: string;
+  name?: string;
   deveui?: string;
-  tipoDispositivo?: TipoDispositivo;
+  tipo?: TipoDispositivo;
 }

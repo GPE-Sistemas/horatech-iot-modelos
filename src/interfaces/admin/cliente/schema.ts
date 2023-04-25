@@ -4,8 +4,9 @@ import { IImagenCliente } from "./imagenes";
 
 export interface ICliente {
   _id: string;
-  activo?: boolean;
   fechaCreacion?: string;
+  //
+  activo?: boolean;
   nombre?: string;
   tiposDispositivo?: TipoDispositivo[];
   imagenes?: IImagenCliente;
