@@ -1,7 +1,7 @@
 import { ILocation } from "../../auxiliares";
 import { IAlerta, IReporte, ITenantInfoGas } from "../../admin";
 
-export interface ICreateMedidorResidencialGas {
+export interface IUpdateMedidorResidencialGas {
   tenant?: ITenantInfoGas;
   //
   numeroSerie?: number;

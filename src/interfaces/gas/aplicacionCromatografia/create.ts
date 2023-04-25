@@ -1,9 +1,9 @@
+import { ITenantInfoGas } from "../../admin";
+
 export interface ICreateAplicacionCromatografia {
-  aplicada: boolean;
-  idCromatografia: string;
-  numeroSerieCorrectora: number;
+  tenant?: ITenantInfoGas;
   //
-  idCliente?: string;
-  idUnidadNegocio?: string;
-  idCuenca?: string;
+  aplicada?: boolean;
+  idCromatografia?: string;
+  numeroSerieCorrectora?: number;
 }

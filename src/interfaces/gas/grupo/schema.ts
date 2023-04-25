@@ -1,10 +1,9 @@
-import { IUnidadNegocio } from "../unidadNegocio";
+import { ITenantInfoGas } from "../../admin";
 
 export interface IGrupo {
-  _id: string;
+  _id?: string;
+  fechaCreacion?: string;
+  //
+  tenant?: ITenantInfoGas;
   nombre: string;
-  idCliente: string;
-  idUnidadNegocio: string;
-  // Populate
-  unidadNegocio?: IUnidadNegocio;
 }

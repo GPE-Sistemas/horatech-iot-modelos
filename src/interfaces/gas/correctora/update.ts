@@ -1,7 +1,8 @@
-import { ILocation } from "../../auxiliares";
 import { IAlerta, IReporte, ITenantInfoGas } from "../../admin";
+import { ILocation } from "../../auxiliares";
+import { ICromatografia } from "../cromatografia";
 
-export interface ICreateMedidorResidencialGas {
+export interface IUpdateCorrectora {
   tenant?: ITenantInfoGas;
   //
   numeroSerie?: number;
@@ -12,11 +13,12 @@ export interface ICreateMedidorResidencialGas {
   firmware?: string;
   bateria?: number;
   location?: ILocation;
-  consumoInicial?: number;
   //
-  ultimoReporte?: IReporte;
-  ultaimaAlerta?: IAlerta;
-  //
-  deveui: string;
+  deveui?: string;
   idsGrupos?: string[];
+  //
+  ultimoRegistro?: IReporte;
+  ultimaAlerta?: IAlerta;
+  ultimaCromatografia?: ICromatografia;
+  fechaUltimaCromatografia?: string;
 }

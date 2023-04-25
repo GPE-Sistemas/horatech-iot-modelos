@@ -1,10 +1,7 @@
-export interface ICreateCuenca {
-  nombre: string;
-  idUnidadNegocio: string;
-  idCliente?: string;
-}
+import { ITenantInfoGas } from "../../admin";
 
-export interface IUpdateCuenca {
+export interface ICreateCuenca {
+  tenant?: ITenantInfoGas;
+  //
   nombre?: string;
-  idUnidadNegocio?: string;
 }

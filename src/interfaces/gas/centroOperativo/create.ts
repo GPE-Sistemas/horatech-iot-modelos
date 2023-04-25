@@ -1,10 +1,6 @@
-export interface ICreateCentroOperativo {
-  nombre: string;
-  idUnidadNegocio: string;
-  idCliente?: string;
-}
+import { ITenantInfoGas } from "../../admin";
 
-export interface IUpdateCentroOperativo {
+export interface ICreateCentroOperativo {
   nombre?: string;
-  idUnidadNegocio?: string;
+  tenant?: ITenantInfoGas;
 }

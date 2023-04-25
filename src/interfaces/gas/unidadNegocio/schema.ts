@@ -1,5 +1,9 @@
+import { ITenantInfoGas } from "../../admin";
+
 export interface IUnidadNegocio {
-  _id: string;
+  _id?: string;
+  fechaCreacion?: string;
+  //
+  tenant?: ITenantInfoGas;
   nombre: string;
-  idCliente: string;
 }

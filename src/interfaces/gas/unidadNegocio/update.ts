@@ -1,7 +1,6 @@
 import { ITenantInfoGas } from "../../admin";
 
-export interface ICentroOperativo {
-  _id?: string;
-  nombre?: string;
+export interface IUpdateUnidadNegocio {
   tenant?: ITenantInfoGas;
+  nombre: string;
 }

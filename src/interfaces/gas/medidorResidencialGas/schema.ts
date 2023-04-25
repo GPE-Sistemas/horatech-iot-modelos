@@ -1,37 +1,29 @@
-import { IDispositivo, IReporte } from "../../admin";
-import { ICoordenadas } from "../../auxiliares";
-import { ICentroOperativo } from "../centroOperativo";
-import { ICuenca } from "../cuenca";
+import { IAlerta, IDispositivo, IReporte, ITenantInfoGas } from "../../admin";
+import { ILocation } from "../../auxiliares";
 import { IGrupo } from "../grupo";
-import { IUnidadNegocio } from "../unidadNegocio";
 
 export interface IMedidorResidencialGas {
-  _id: string;
-  //
-  deviceMeterNumber?: number;
-  deveui?: string;
-  deviceName?: string;
+  _id?: string;
   fechaCreacion?: string;
   //
-  ultimoReporte?: IReporte;
+  tenant?: ITenantInfoGas;
   //
-  consumoInicial?: number;
-  ubicacionGps?: ICoordenadas;
-  direccion?: string;
-  localidad?: string;
+  numeroSerie?: number;
+  modelo?: string;
   nombre?: string;
   descripcion?: string;
-  corregido?: boolean;
+  codigoSimec?: string;
+  firmware?: string;
+  bateria?: number;
+  location?: ILocation;
+  consumoInicial?: number;
   //
-  idCliente?: string;
-  idUnidadNegocio?: string;
-  idCentroOperativo?: string;
-  idCuenca?: string;
+  ultimoReporte?: IReporte;
+  ultaimaAlerta?: IAlerta;
+  //
+  deveui: string;
   idsGrupos?: string[];
   // Populate
-  unidadNegocio?: IUnidadNegocio;
-  centroOperativo?: ICentroOperativo;
-  cuenca?: ICuenca;
-  grupos?: IGrupo[];
   dispositivo?: IDispositivo;
+  grupos?: IGrupo[];
 }

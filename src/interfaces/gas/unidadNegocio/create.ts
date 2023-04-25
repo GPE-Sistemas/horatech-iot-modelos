@@ -1,8 +1,6 @@
-export interface ICreateUnidadNegocio {
-  nombre: string;
-  idCliente?: string;
-}
+import { ITenantInfoGas } from "../../admin";
 
-export interface IUpdateUnidadNegocio {
-  nombre?: string;
+export interface ICreateUnidadNegocio {
+  tenant?: ITenantInfoGas;
+  nombre: string;
 }

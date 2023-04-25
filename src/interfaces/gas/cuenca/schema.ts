@@ -1,10 +1,10 @@
-import { IUnidadNegocio } from "../unidadNegocio";
+import { ITenantInfoGas } from "../../admin";
 
 export interface ICuenca {
-  _id: string;
-  nombre: string;
-  idUnidadNegocio: string;
-  idCliente: string;
-  // Virtual
-  unidadNegocio: IUnidadNegocio;
+  _id?: string;
+  fechaCreacion?: string;
+  //
+  tenant?: ITenantInfoGas;
+  //
+  nombre?: string;
 }

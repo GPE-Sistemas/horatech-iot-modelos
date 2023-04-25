@@ -1,10 +1,6 @@
-export interface ICreateGrupo {
-  nombre: string;
-  idUnidadNegocio: string;
-  idCliente?: string;
-}
+import { ITenantInfoGas } from "../../admin";
 
-export interface IUpdateGrupo {
-  nombre?: string;
-  idUnidadNegocio?: string;
+export interface ICreateGrupo {
+  tenant?: ITenantInfoGas;
+  nombre: string;
 }

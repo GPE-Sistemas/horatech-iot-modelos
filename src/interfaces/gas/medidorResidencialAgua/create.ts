@@ -1,46 +1,22 @@
-import { IReporte } from "../../admin";
-import { ICoordenadas } from "../../auxiliares";
+import { IAlerta, IReporte, ITenantInfoGas } from "../../admin";
+import { ILocation } from "../../auxiliares";
 
 export interface ICreateMedidorResidencialAgua {
-  deviceMeterNumber?: number;
+  tenant?: ITenantInfoGas;
+  //
+  numeroSerie?: number;
+  modelo?: string;
+  nombre?: string;
+  descripcion?: string;
+  codigoSimec?: string;
+  firmware?: string;
+  bateria?: number;
+  location?: ILocation;
+  consumoInicial?: number;
+  //
+  ultimoReporte?: IReporte;
+  ultaimaAlerta?: IAlerta;
+  //
   deveui: string;
-  deviceName?: string;
-  //
-  ultimoReporte?: IReporte;
-  //
-  consumoInicial?: number;
-  ubicacionGps?: ICoordenadas;
-  direccion?: string;
-  localidad?: string;
-  nombre?: string;
-  descripcion?: string;
-  corregido?: boolean;
-  //
-  idCliente?: string;
-  idUnidadNegocio?: string;
-  idCentroOperativo?: string;
-  idCuenca?: string;
-  idsGrupos?: string[];
-}
-
-export interface IUpdateMedidorResidencialAgua {
-  deviceMeterNumber?: number;
-  deveui?: string;
-  deviceName?: string;
-  //
-  ultimoReporte?: IReporte;
-  //
-  consumoInicial?: number;
-  ubicacionGps?: ICoordenadas;
-  direccion?: string;
-  localidad?: string;
-  nombre?: string;
-  descripcion?: string;
-  corregido?: boolean;
-  //
-  idCliente?: string;
-  idUnidadNegocio?: string;
-  idCentroOperativo?: string;
-  idCuenca?: string;
   idsGrupos?: string[];
 }
