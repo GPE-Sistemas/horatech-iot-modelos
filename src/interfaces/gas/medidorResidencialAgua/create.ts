@@ -8,7 +8,6 @@ export interface ICreateMedidorResidencialAgua {
   modelo?: string;
   nombre?: string;
   descripcion?: string;
-  codigoSimec?: string;
   firmware?: string;
   bateria?: number;
   location?: ILocation;

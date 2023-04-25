@@ -8,7 +8,6 @@ export interface ICreateMedidorResidencialGas {
   modelo?: string;
   nombre?: string;
   descripcion?: string;
-  codigoSimec?: string;
   firmware?: string;
   bateria?: number;
   location?: ILocation;

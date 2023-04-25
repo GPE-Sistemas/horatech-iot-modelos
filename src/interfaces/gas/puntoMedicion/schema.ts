@@ -1,6 +1,9 @@
 import { IAlerta, IDispositivo, IReporte, ITenantInfoGas } from "../../admin";
 import { ILocation } from "../../auxiliares";
+import { ICorrectora } from "../correctora";
 import { IGrupo } from "../grupo";
+import { IMedidorResidencialAgua } from "../medidorResidencialAgua";
+import { IMedidorResidencialGas } from "../medidorResidencialGas";
 
 export interface IPuntoMedicion {
   _id?: string;
@@ -15,9 +18,13 @@ export interface IPuntoMedicion {
   ultimoReporte?: IReporte;
   ultaimaAlerta?: IAlerta;
   //
-  deveui: string;
+  idCorrectora?: string;
+  idMedidorResidencialGas?: string;
+  idMedidorResidencialAgua?: string;
   idsGrupos?: string[];
   // Populate
-  dispositivo?: IDispositivo;
+  correctora?: ICorrectora;
+  medidorResidencialGas?: IMedidorResidencialGas;
+  medidorResidencialAgua?: IMedidorResidencialAgua;
   grupos?: IGrupo[];
 }

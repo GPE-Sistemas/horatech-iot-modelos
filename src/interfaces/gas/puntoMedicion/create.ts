@@ -11,6 +11,8 @@ export interface ICreatePuntoMedicion {
   ultimoReporte?: IReporte;
   ultaimaAlerta?: IAlerta;
   //
-  deveui: string;
+  idCorrectora?: string;
+  idMedidorResidencialGas?: string;
+  idMedidorResidencialAgua?: string;
   idsGrupos?: string[];
 }

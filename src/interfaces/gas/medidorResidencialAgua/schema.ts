@@ -12,7 +12,6 @@ export interface IMedidorResidencialAgua {
   modelo?: string;
   nombre?: string;
   descripcion?: string;
-  codigoSimec?: string;
   firmware?: string;
   bateria?: number;
   location?: ILocation;
